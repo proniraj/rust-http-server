@@ -43,7 +43,7 @@ fn main() {
 
                         response
                             .headers
-                            .set(String::from("Content-Type"), &String::from("Text/Plain"));
+                            .set(String::from("Content-Type"), &String::from("text/plain"));
 
                         if let Some(slug) = parts.get(2) {
                             response.set_body(&slug.to_string()).unwrap();
